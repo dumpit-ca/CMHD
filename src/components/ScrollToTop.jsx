@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-export const ScrollToTop = () => {
+const ScrollToTop = () => {
   const [backToTopBtn, setVisible] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -34,3 +34,4 @@ export const ScrollToTop = () => {
     </div>
   );
 };
+export default ScrollToTop;
